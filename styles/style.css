@@ -8,14 +8,38 @@ html, body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    scroll-padding-top: 30px;
+    scroll-padding-top: 95px;
     overflow-x: hidden;
 }
 
-body {
-    background: linear-gradient(120deg, #191c1f, #36393e);
-    background-repeat: no-repeat;
+body::before {
+    position: fixed;
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    transform: scale(1.05);
+    background-image: url(../images/new-1158093603-612x612.png);
+    background-repeat: repeat;
     background-attachment: fixed;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0); 
+}
+
+body {
+    position: relative;
     font-family: 'Rubik', sans-serif;
     color: rgb(244, 244, 244);
 }
@@ -44,7 +68,19 @@ a {
     display: flex;
     gap: 5rem;
     list-style-type: none;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+}
+
+.navbar li {
+    transition: 0.15s ease;
+    opacity: 0.5;
+}
+
+.navbar li:hover {
+    color: white;
+    transform: scale(1.05);
+    text-shadow: 0px 0px 5px rgba(255, 233, 134, 0.3);
+    opacity: 1;
 }
 
 header {
@@ -57,12 +93,12 @@ header {
 
 header img {
     padding-bottom: 4rem;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }
 
 #join-button-main {
-    background-color: rgb(231, 11, 11);
-    border: 4px solid transparent;
+    background: rgb(30, 158, 53);
+    background-repeat: no-repeat;
     font-size: 1.75rem;
     font-weight: bold;
     padding-bottom: 1.5rem;
@@ -75,10 +111,10 @@ header img {
 }
 
 #join-button-main:hover {
-    background-color: transparent;
-    border: 4px solid rgb(231, 11, 11);
-    color: rgb(231, 11, 11);
+    background-color: rgb(31, 218, 65);
+    color: rgb(255, 255, 255);
     filter: drop-shadow(0px 0px 10px rgba(253, 88, 88, 0.5));
+    transform: scale(1.1, 1.1);
     cursor: pointer;
 }
 
@@ -110,6 +146,7 @@ header img {
 #about {
     display: flex;
     flex-direction: column;
+    gap: 40px;
     align-items: center;
     justify-content: center;
 }
@@ -121,15 +158,16 @@ header img {
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin: 0;
 }
 
 .sub-section-header {
     font-size: 3rem;
 }
 
-#our-story-header {
+.our-story-header {
     background-color: #424549;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 6rem;
 
 }
@@ -167,7 +205,6 @@ header img {
     border-radius: 20px;
     object-fit: cover;
 }
-
 
 p {
     font-size: 2rem;
