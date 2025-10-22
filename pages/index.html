@@ -4,40 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Gambit Media Group</title>
+
     <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar">
-        <img src="../images/gambit-logo-small.png" alt="Gambit Media Logo" width="100">
+        <img src="../images/new logo.png" alt="Gambit Media Logo" width="80">
         <ul>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about" aria-current="page">About</a></li>
             <li><a href="#join">Join</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <header>
-        <img src="../images/gambit-logo-main.png" alt="Gambit Media" width="600">
-        <a href="#" id="join-button-main">Join now!</a>
-        <a href="#about">
-            <span class="see-more">See more</span>
+        <img src="../images/new new logo big.png" alt="Gambit Media" width="600">
+        <a href="https://discord.gg/aMjsEnQAGD" id="join-button-main">Join now!</a>
+        <a id="see-more-button" href="#about">
+            <span class="see-more-text">See more</span>
             <span class="arrow">&#x25BC;</span>
         </a>
     </header>
     <section id="about">
-        <h2 class="section-header">About Us</h2>
+        <h2 class="section-header"><span class="decor">&clubs; &diamondsuit; &hearts; &spades;</span> About Us <span
+                class="decor">&clubs; &diamondsuit; &hearts; &spades;</span></h2>
 
-        <h3 class="sub-section-header">Our Story</h3>
+        <div class="main-story-container">
+            <h3 id="our-story-header" class="sub-section-header"><span class="decor2">&clubs; &diamondsuit; &hearts;
+                    </span> Our Story <span class="decor2">&diamondsuit; &hearts; &spades;</span></h3>
 
-        <p>Gambit Media Group began in August 2025, originally known as Gambit SMP — a Minecraft server dedicated to
-            bringing creators together through collaborative gameplay and content. After ownership transitioned to
-            MayhemForge, our vision expanded beyond a single server.</p>
+            <div class="our-story-container">
+                <div class="our-story-wrapper">
+                    <p>Gambit Media Group began in August 2025, originally known as Gambit SMP — a Minecraft server
+                        dedicated to
+                        bringing creators together through collaborative gameplay and content. After ownership
+                        transitioned
+                        to
+                        MayhemForge, our vision expanded beyond a single server.</p>
 
-        <p>What started as a small Minecraft community evolved into a full media group built around creativity,
-            collaboration, and growth. Today, Gambit Media Group focuses on supporting a diverse community of upcoming
-            content creators across various platforms and genres — united not just by games, but by a shared passion for
-            creating and inspiring others.</p>
+
+                    <p>What started as a small Minecraft community evolved into a full media group built around
+                        creativity,
+                        collaboration, and growth. Today, Gambit Media Group focuses on supporting a diverse community
+                        of
+                        upcoming
+                        content creators across various platforms and genres — united not just by games, but by a shared
+                        passion
+                        for
+                        creating and inspiring others.</p>
+                </div>
+                <figure>
+                    <img class="memory1" src="../images/memory1.png" alt="Old Gambit Branding">
+                    <figcaption>Old Gambit branding.</figcaption>
+                </figure>
+            </div>
+        </div>
 
         <h3 class="sub-section-header">Our Goal</h3>
 
@@ -49,26 +73,34 @@
 
         <p>Our staff are an essential part of Gambit Media Group, working together to support the community and ensure
             every project and event runs seamlessly.</p>
-        
+
         <ul>
             <li>
-                <img src="../images/mayhemforge-pfp.png" alt="MayhemForge" width="300">
-                <h3>MayhemForge</h3>
-            </li>
-                
-            <li>
-                <img src="../images/beans-pfp.png" alt="OpBeans" width="300">
-                <h3>OpBeans</h3>
+                <img class="pfp" src="../images/mayhemforge-pfp.png" alt="MayhemForge" width="300">
+                <h3>MayhemForge - Owner</h3>
+                <p>Founder of Gambit Media Group and the driving force behind its growth. Constantly organizing new
+                    events, community activities, and member waves to keep the community lively and evolving.</p>
             </li>
 
             <li>
-                <img src="../images/penniy-pfp.png" alt="Penniy" width="300">
-                <h3>Penniy</h3>
+                <img class="pfp" src="../images/beans-pfp.png" alt="OpBeans" width="300">
+                <h3>OpBeans - Admin</h3>
+                <p>The longest-standing member of the admin team. Dedicated to maintaining a safe, welcoming environment
+                    while keeping the community engaged and active.</p>
             </li>
 
             <li>
-                <img src="../images/euclid-pfp.png" alt="Euclid" width="300">
-                <h3>Euclid</h3>
+                <img class="pfp" src="../images/penniy-pfp.png" alt="Penniy" width="300">
+                <h3>Penniy - Admin</h3>
+                <p>One of the newest additions to the moderation team, known for their friendly and approachable
+                    attitude. Always active in chat and quick to make members feel at home.</p>
+            </li>
+
+            <li>
+                <img class="pfp" src="../images/euclid-pfp.png" alt="Euclid" width="300">
+                <h3>Euclid - Admin</h3>
+                <p>A recently appointed moderator recognized for their strong presence on the Minecraft SMP. Actively
+                    involved in community-driven lore and keeping gameplay fair and enjoyable for everyone.</p>
             </li>
         </ul>
 
@@ -77,7 +109,7 @@
 
         <h2 class="section-header">Join Us</h2>
 
-        <h3 class="section-sub-header"></h3>
+        <div class="video-placeholder"></div>
 
         <p>As part of your application, we ask that you create a 30-second to 1-minute video that showcases your
             personality. Use this time to talk about your hobbies, interests, or personal projects, and let us see what
@@ -101,13 +133,13 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://discord.gg/aMjsEnQAGD">
                     <span>Discord</span>
                     <span><img src="../images/discord.svg" alt="Discord" width="30"></span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://www.youtube.com/@GambitSMP">
                     <span>Youtube</span>
                     <span><img src="../images/youtube.svg" alt="Youtube" width="30"></span>
                 </a>
@@ -117,7 +149,8 @@
 
     </section>
     <footer>
-        <p><small>Designed by Memtoz.dev using VSCode <time datetime="2025">2025</time> all rights reserved &copy;.</small></p>
+        <p><small>Designed by Memtoz.dev using VSCode <time datetime="2025">2025</time> all rights reserved
+                &copy;.</small></p>
     </footer>
 </body>
 
