@@ -1,164 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Gambit Media Group</title>
 
+    <!-- styles -->
     <link rel="stylesheet" href="../styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/new new logo big.png">
+
+    <!-- Google font (keeps your original choice) -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar">
-        <img src="../images/new logo.png" alt="Gambit Media Logo" width="80">
-        <ul>
-            <li><a href="#about" aria-current="page">About</a></li>
-            <li><a href="#join">Join</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <header>
-        <img src="../images/new new logo big.png" alt="Gambit Media" width="600">
-        <a href="https://discord.gg/aMjsEnQAGD" id="join-button-main">Join now!</a>
-        <a id="see-more-button" href="#about">
-            <span class="see-more-text">See more</span>
-            <span class="arrow">&#x25BC;</span>
-        </a>
+    <!-- top nav -->
+    <header class="site-header" id="top">
+        <div class="nav-inner">
+            <a class="nav-brand" href="#top" aria-label="Gambit Media home">
+                <!-- Replace with your mini-logo (square) -->
+                <img src="../images/new logo.png" alt="Gambit mini logo" width="48" height="48">
+            </a>
+
+            <button id="nav-toggle" class="nav-toggle" aria-controls="site-nav" aria-expanded="false"
+                aria-label="Open navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#join">Join</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="about">
-        <h2 class="section-header"><span class="decor">&clubs; &diamondsuit; &hearts; &spades;</span> About Us <span
-                class="decor">&clubs; &diamondsuit; &hearts; &spades;</span></h2>
 
-        <div class="main-story-container">
-            <h3 class="sub-section-header our-story-header">Our Story</h3>
+    <!-- hero -->
+    <main>
+        <section class="hero" role="region" aria-labelledby="hero-title">
+            <!-- Replace with your large centered logo -->
+            <img class="hero-logo" src="../images/new new logo big.png" alt="Gambit Media logo" />
 
-            <div class="our-story-container">
-                <div class="our-story-wrapper">
-                    <p>Gambit Media Group began in August 2025, originally known as Gambit SMP — a Minecraft server
-                        dedicated to
-                        bringing creators together through collaborative gameplay and content. After ownership
-                        transitioned
-                        to
-                        MayhemForge, our vision expanded beyond a single server.</p>
+            <div class="hero-ctas">
+                <a id="join-button-main" class="btn btn-primary" href="https://discord.gg/aMjsEnQAGD" target="_blank"
+                    rel="noopener noreferrer">Join now!</a>
+                <a id="see-more-button" class="see-more" href="#about" aria-label="See more about Gambit Media">
+                    <span>See more</span>
+                    <span class="arrow" aria-hidden="true">▾</span>
+                </a>
+            </div>
+        </section>
 
+        <!-- ABOUT -->
+        <section id="about" class="section about" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="section-header">
+                <span class="decor">♣ ♦ ♥ ♠</span>
+                About Us
+                <span class="decor">♣ ♦ ♥ ♠</span>
+            </h2>
 
-                    <p>What started as a small Minecraft community evolved into a full media group built around
-                        creativity,
-                        collaboration, and growth. Today, Gambit Media Group focuses on supporting a diverse community
-                        of
-                        upcoming
-                        content creators across various platforms and genres — united not just by games, but by a shared
-                        passion
-                        for
-                        creating and inspiring others.</p>
-                </div>
-                <figure>
-                    <img class="memory1" src="../images/memory1.png" alt="Old Gambit Branding">
+            <div class="story-grid">
+                <article class="story main-story">
+                    <h3 class="sub-section-header our-story-header">Our Story</h3>
+
+                    <div class="our-story-text">
+                        <p>Gambit Media Group began in August 2025, originally known as Gambit SMP — a Minecraft server
+                            dedicated to bringing creators together through collaborative gameplay and content. After
+                            ownership transitioned to MayhemForge, our vision expanded beyond a single server.</p>
+
+                        <p>What started as a small Minecraft community evolved into a full media group built around
+                            creativity, collaboration, and growth. Today, Gambit Media Group focuses on supporting a
+                            diverse community of upcoming content creators across various platforms and genres — united
+                            not just by games, but by a shared passion for creating and inspiring others.</p>
+                    </div>
+                </article>
+
+                <figure class="story-figure">
+                    <!-- Placeholder image - replace with ../images/memory1.png or desired asset -->
+                    <img src="../images/memory1.png" alt="Old Gambit branding" class="memory1" />
                     <figcaption>Old Gambit branding.</figcaption>
                 </figure>
             </div>
-        </div>
 
-            <h3 class="sub-section-header "><span class="decor2">&clubs; &diamondsuit; &hearts;
-                </span> Our Goal <span class="decor2">&diamondsuit; &hearts; &spades;</span></h3>
+            <div class="goal">
+                <h3 class="sub-section-header">Our Goal</h3>
+                <p>At Gambit Media Group, our goal is to build a collaborative community where aspiring content creators
+                    can grow, inspire, and achieve more together. We believe in the power of teamwork — creators
+                    supporting creators — to bring ambitious ideas to life. We host events, video collaborations, and
+                    operate a Minecraft server to create chances for creators to showcase and grow.</p>
+            </div>
+
+            <section class="staff">
+  <h2 class="sub-section-header">Our Staff</h2>
+
+  <ul class="staff-list">
+    <li>
+      <a class="staff-item" href="https://youtube.com/@MayhemForge" target="_blank" rel="noopener">
+        <img class="pfp" src="../images/mayhemforge-pfp.png" alt="MayhemForge">
+        <h3>MayhemForge - <span class="role">Owner</span></h3>
+        <p>
+          Founder of Gambit Media Group and the driving force behind its growth.
+          Constantly organizing new events and community activities.
+        </p>
+      </a>
+    </li>
+
+    <li>
+      <a class="staff-item" href="https://youtube.com/@opbeans" target="_blank" rel="noopener">
+        <img class="pfp" src="../images/beans-pfp.png" alt="opbeans">
+        <h3>opbeans - <span class="role">Admin</span></h3>
+        <p>
+          Longest-standing admin; keeps community safe and active.
+        </p>
+      </a>
+    </li>
+
+    <li>
+      <a class="staff-item" href="https://youtube.com/@Penniy" target="_blank" rel="noopener">
+        <img class="pfp" src="../images/penniy-pfp.png" alt="Penniy">
+        <h3>Penniy - <span class="role">Admin</span></h3>
+        <p>
+          Friendly and approachable moderator, active in chat and events.
+        </p>
+      </a>
+    </li>
+
+    <li>
+      <a class="staff-item" href="https://youtube.com/@Euclid" target="_blank" rel="noopener">
+        <img class="pfp" src="../images/euclid-pfp.png" alt="Euclid">
+        <h3>Euclid - <span class="role">Admin</span></h3>
+        <p>
+          Moderates gameplay and community-driven lore.
+        </p>
+      </a>
+    </li>
+  </ul>
+</section>
 
 
-                    <p>At Gambit Media Group, our goal is to build a collaborative community where
-                        aspiring content
-                        creators
-                        can
-                        grow, inspire, and achieve more together. We believe in the power of teamwork — creators
-                        supporting
-                        creators
-                        — to bring ambitious ideas to life.</p>
+        </section>
 
+        <!-- JOIN -->
+        <section id="join" class="section join" aria-labelledby="join-heading">
+            <h2 id="join-heading" class="section-header">Join Us</h2>
 
-        <h3 class="sub-section-header">Our Staff</h3>
+            <div class="join-grid">
+                <div class="video-placeholder">
+                    <!-- Replace with actual video embed or <video> tag -->
+                    <!-- Example: <video controls poster="../images/video-poster.jpg"><source src="../images/example-apply.mp4" type="video/mp4"></video> -->
+                    <div class="video-faux">Video placeholder — replace with embed or <code>&lt;video&gt;</code></div>
+                </div>
 
-        <p>Our staff are an essential part of Gambit Media Group, working together to support the community and ensure
-            every project and event runs seamlessly.</p>
+                <div class="join-info">
+                    <p>As part of your application, create a 30-60 second video showing your personality. Talk about
+                        your hobbies, projects, and what makes you unique. Editing is optional — personality matters
+                        most. Upload the video or provide a link when you apply.</p>
+                </div>
+            </div>
+        </section>
 
-        <ul>
-            <li>
-                <img class="pfp" src="../images/mayhemforge-pfp.png" alt="MayhemForge" width="300">
-                <h3>MayhemForge - Owner</h3>
-                <p>Founder of Gambit Media Group and the driving force behind its growth. Constantly organizing new
-                    events, community activities, and member waves to keep the community lively and evolving.</p>
-            </li>
+        <!-- CONTACT -->
+        <section id="contact" class="section contact" aria-labelledby="contact-heading">
 
-            <li>
-                <img class="pfp" src="../images/beans-pfp.png" alt="OpBeans" width="300">
-                <h3>OpBeans - Admin</h3>
-                <p>The longest-standing member of the admin team. Dedicated to maintaining a safe, welcoming environment
-                    while keeping the community engaged and active.</p>
-            </li>
+            <div class="contact-main-container">
+                <div class="contact-sub-container">
+                    <h2 id="contact-heading" class="section-header">Contact Us</h2>
 
-            <li>
-                <img class="pfp" src="../images/penniy-pfp.png" alt="Penniy" width="300">
-                <h3>Penniy - Admin</h3>
-                <p>One of the newest additions to the moderation team, known for their friendly and approachable
-                    attitude. Always active in chat and quick to make members feel at home.</p>
-            </li>
+                    <p>We primarily operate through our Discord server — our community and staff are most active there.
+                        For
+                        other inquiries, you can email us or check out the official Gambit Media YouTube channel.</p>
 
-            <li>
-                <img class="pfp" src="../images/euclid-pfp.png" alt="Euclid" width="300">
-                <h3>Euclid - Admin</h3>
-                <p>A recently appointed moderator recognized for their strong presence on the Minecraft SMP. Actively
-                    involved in community-driven lore and keeping gameplay fair and enjoyable for everyone.</p>
-            </li>
-        </ul>
+                    <div class="contact-grid">
+                        <div class="contact-links-wrapper">
+                            <div class="contact-links">
+                                <ul>
+                                    <li id="email-button">
+                                        <a href="#" id="email-link">
+                                            <span>Email</span>
+                                            <img src="../images/mail.svg" alt="" width="20" height="20">
+                                        </a>
+                                    </li>
+                                    <li id="discord-button">
+                                        <a href="https://discord.gg/aMjsEnQAGD" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <span>Discord</span>
+                                            <img src="../images/discord.svg" alt="" width="20" height="20">
+                                        </a>
+                                    </li>
+                                    <li id="youtube-button">
+                                        <a href="https://www.youtube.com/@GambitSMP" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <span>YouTube</span>
+                                            <img src="../images/youtube.svg" alt="" width="20" height="20">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    </section>
-    <section id="join">
+                <form class="email-form" action="#" method="post" enctype="text/plain"
+                    aria-label="Email submission form">
+                    <label for="email">Your email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
 
-        <h2 class="section-header">Join Us</h2>
+                    <label for="message">Message / link to your application video</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Paste a link to your video or write a short message"></textarea>
 
-        <div class="video-placeholder"></div>
+                    <button type="submit" class="btn btn-secondary">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-        <p>As part of your application, we ask that you create a 30-second to 1-minute video that showcases your
-            personality. Use this time to talk about your hobbies, interests, or personal projects, and let us see what
-            makes you unique. You're encouraged to express your creativity through editing and presentation, but editing
-            isn't required — what matters most is that your video reflects who you are and how you bring your
-            individuality to the community.</p>
-
-    </section>
-    <section id="contact">
-
-        <h2 class="section-header">Contact Us</h2>
-        <p>We primarily operate through our Discord server, where our community and staff stay active and connected. For
-            inquiries outside Discord, you can also reach us by email or visit the official Gambit Media YouTube channel
-            to see what our members are creating and stay updated on our latest projects.</p>
-
-        <ul>
-            <li>
-                <a href="#">
-                    <span>Email</span>
-                    <span><img src="../images/mail.svg" alt="Mail" width="30"></span>
-                </a>
-            </li>
-            <li>
-                <a href="https://discord.gg/aMjsEnQAGD">
-                    <span>Discord</span>
-                    <span><img src="../images/discord.svg" alt="Discord" width="30"></span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@GambitSMP">
-                    <span>Youtube</span>
-                    <span><img src="../images/youtube.svg" alt="Youtube" width="30"></span>
-                </a>
-            </li>
-
-        </ul>
-
-    </section>
-    <footer>
-        <p><small>Designed by Memtoz.dev using VSCode <time datetime="2025">2025</time> all rights reserved
-                &copy;.</small></p>
+    <!-- footer -->
+    <footer class="site-footer">
+        <p><small>Designed by Memtoz.dev using VSCode <time datetime="2025">2025</time>. All rights reserved ©.</small>
+        </p>
     </footer>
+
+    <!-- scripts -->
+    <script src="../scripts/main.js" defer></script>
 </body>
 
 </html>
