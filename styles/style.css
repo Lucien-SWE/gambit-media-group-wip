@@ -7,8 +7,8 @@
 :root {
     --bg-dark: #1f2124;
     --panel: #2b2e31;
-    --accent: #1e9e35;
-    --accent-2: #1fda41;
+    --accent: #ff0048;
+    --accent-2: #ff0000;
     --muted: #9aa0a6;
     --text: #f4f4f4;
     --glass: rgba(255, 255, 255, 0.04);
@@ -180,7 +180,7 @@ a:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: calc(var(--nav-height) + 2rem);
+    padding-top: calc(var(--nav-height) + 1rem);
     padding-bottom: 4rem;
     text-align: center;
 }
@@ -196,7 +196,8 @@ a:focus {
 /* CTAs */
 .hero-ctas {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -204,11 +205,11 @@ a:focus {
 
 .btn {
     display: inline-block;
-    padding: .75rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 999px;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: .2px;
     transition: transform .12s ease, box-shadow .12s ease;
 }
@@ -218,15 +219,19 @@ a:focus {
 }
 
 /* primary */
+
 .btn-primary {
     background: linear-gradient(180deg, var(--accent), var(--accent-2));
     color: #071203;
-    box-shadow: 0 6px 18px rgba(30, 158, 53, 0.18);
+    box-shadow: 0 6px 18px rgba(255, 0, 0, 0.18);
+    transition: color .3s ease;
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0px 0px 30px rgba(30, 158, 53, 0.2);
+    box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.342);
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
 
 /* secondary */
@@ -247,14 +252,17 @@ a:focus {
 /* see more link */
 .see-more {
     display: flex;
-    gap: .5rem;
+    flex-direction: column;
+    gap: 0;
+    font-size: 1.1rem;
     align-items: center;
-    opacity: .85;
+    opacity: .5;
     font-weight: 500;
+    transition: opacity 0.3s ease;
 }
 
 .see-more .arrow {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     display: inline-block;
     transform: translateY(0);
     transition: transform .4s ease;
@@ -262,6 +270,11 @@ a:focus {
 
 .see-more:hover .arrow {
     transform: translateY(4px);
+    opacity: 0.85;
+}
+
+.see-more:hover {
+    opacity: 0.85;
 }
 
 /* ---------- SECTIONS ---------- */
@@ -269,6 +282,12 @@ a:focus {
     padding: 4rem 1.25rem;
     max-width: var(--max-width);
     margin: 0 auto;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .section-header {
@@ -284,22 +303,34 @@ a:focus {
 /* ABOUT - story grid */
 .story-grid {
     display: grid;
-    grid-template-columns: 1fr 420px;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
     align-items: center;
     margin-top: 1.5rem;
 }
 
 .our-story-text p {
-    font-size: clamp(1rem, 1.6vw, 1.125rem);
-    line-height: 1.7;
+    font-size: clamp(1rem, 1.6vw, 1.4rem);
+    line-height: 1.8;
     color: var(--text);
     margin: 0 0 1rem 0;
 }
 
+.our-story-header {
+    margin-top: 0;
+    padding-bottom: 1rem;
+}
+
 /* image figure */
+.story-figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .story-figure img {
-    width: 100%;
+    width: 500px;
     height: auto;
     border-radius: .75rem;
     object-fit: cover;
@@ -319,14 +350,19 @@ figcaption {
     margin-top: 2rem;
 }
 
+.staff .sub-section-header {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
 .sub-section-header {
     font-size: clamp(1.25rem, 2.4vw, 2rem);
     margin-bottom: 1rem;
 }
 
 .goal p {
-    line-height: 1.7rem;
-    font-size: clamp(1rem, 1.6vw, 1.125rem)
+    line-height: 2.5rem;
+    font-size: clamp(1rem, 1.6vw, 1.4rem)
 }
 
 .staff p {
@@ -365,6 +401,7 @@ figcaption {
 
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   padding: 1rem;
+  padding-bottom: 5rem;
   border-radius: .8rem;
   box-shadow: 0 4px 18px rgba(0,0,0,0.25);
   transition: transform 0.3s ease, background 0.3s ease;
@@ -397,6 +434,7 @@ figcaption {
 .staff-item p {
   color: var(--text);
   margin: 0.25rem 0;
+  line-height: 2rem;
 }
 
 
