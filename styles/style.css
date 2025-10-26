@@ -585,6 +585,12 @@ figcaption {
     border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
 
+.secret-div {
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+
 /* ---------- RESPONSIVE ENHANCEMENTS ---------- */
 
 /* large tablets */
