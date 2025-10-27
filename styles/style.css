@@ -311,7 +311,7 @@ a:focus {
 
 .our-story-text p {
     font-size: clamp(1rem, 1.6vw, 1.4rem);
-    line-height: 1.8;
+    line-height: 2.5rem;
     color: var(--text);
     margin: 0 0 1rem 0;
 }
@@ -361,7 +361,7 @@ figcaption {
 }
 
 .goal p {
-    line-height: 2.5rem;
+    line-height: 1.5;
     font-size: clamp(1rem, 1.6vw, 1.4rem)
 }
 
@@ -603,6 +603,11 @@ figcaption {
         grid-template-columns: 1fr 380px;
     }
 
+    .story-grid p {
+        line-height: 2.5rem;
+        width: 45vw;
+    }
+
     .staff-list {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -617,6 +622,10 @@ figcaption {
     .story-figure {
         order: -1;
         /* image above text */
+    }
+
+    .story-figure img {
+        width: 75vw;
     }
 
     .join-grid {
@@ -714,7 +723,7 @@ figcaption {
     .our-story-text p {
         font-size: 1rem;
         line-height: 1.6rem;
-        width: 100%;
+        width: 90vw;
     }
 
     /* contact section */
@@ -743,12 +752,13 @@ figcaption {
 
     /* staff grid */
     .staff-list {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
 /* very small phones */
 @media (max-width: 480px) {
+
     .section {
         padding: 2rem 1rem;
     }
