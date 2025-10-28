@@ -107,6 +107,7 @@ a:focus {
 /* brand */
 .nav-brand img {
     display: block;
+    object-fit: contain;
 }
 
 /* hamburger */
